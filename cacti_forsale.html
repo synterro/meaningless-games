@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cactivating</title>
+  <style>
+  body {
+    background-color: linen;
+    font-family: sans-serif;
+  }
+  h1 {
+    background-color: lightblue;
+    margin-left: 20px;
+  }
+  p {
+    margin-right: 100px;
+  }
+
+  ul {
+    list-style-type: square;
+
+  }
+  #button {
+    border-radius: 60px;
+    border: 2px solid #6495ED;
+    background-color: lightblue;
+    height: 50px;
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+
+  }
+  div p {
+    font-weight: bold;
+    color: blue;
+    font-size: 16pt;
+    margin-top: 14px;
+    margin-right: 0px;
+  }
+  a {
+    text-decoration: none;
+    color: #6495ED;
+  }
+
+  a:hover {
+    color: violet;
+  }
+
+  button {
+    margin-top:30px;
+    float:left;
+    height:50px;
+}
+img {
+    float:left;
+    margin-right:10px;
+    margin-left:10px;
+    background-color: black;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+  </style>
+</head>
+<body>
+
+
+  <h1 id= "demo" onmouseover="mouseOver()" onmouseout="mouseOut()" >Cactivating: Amazing Home-grown Succulent Plants</h1>
+  <div id="button">
+    <p>  <a href="file:///C:/Users/Martina/OneDrive/Documents/cacti.html">Home</a> </p>
+  </div>
+  <div id="button">
+      <p> <a href="file:///C:/Users/Martina/OneDrive/Documents/cacti_forsale.html">For Sale</a> </p>
+  </div>
+  <div id="button">
+    <p> <a href="file:///C:/Users/Martina/OneDrive/Documents/cacti_care.html">Succulent Care</a> </p>
+  </div>
+  <div id="button">
+    <p>  <a href="file:///C:/Users/Martina/OneDrive/Documents/cacti_contact.html">Contact Us</a> </p>
+  </div>
+
+  <br/>
+
+
+<h3> For Sale </h3>
+
+<p> This is a lovely little gallery of the succulent plants currently for sale. Feel free to click through. All prices negotiable. Free quotes
+  and advice. </p>
+
+  <button onclick="prev()"> Prev </button>
+            
+
+            <img id="slider" src="https://thumb1.shutterstock.com/display_pic_with_logo/4576720/464913383/stock-photo-succulent-clipart-464913383.jpg"/>
+
+            <button onclick="next()"> Next </button>
+  <script>
+  //weh
+  function mouseOver() {
+      document.getElementById("demo").style.color = "green";
+
+  }
+
+  function mouseOut() {
+      document.getElementById("demo").style.color = "black";
+  }
+
+  var images = [
+   'https://thumb1.shutterstock.com/display_pic_with_logo/4576720/464913383/stock-photo-succulent-clipart-464913383.jpg',
+   'https://thumb9.shutterstock.com/display_pic_with_logo/1247512/377181316/stock-photo-watercolor-succulents-clip-art-decorative-design-elements-set-floral-illustration-isolated-on-377181316.jpg',
+   'https://thumb7.shutterstock.com/display_pic_with_logo/1247512/377181301/stock-photo-watercolor-succulents-decorative-illustration-floral-clip-art-isolated-on-white-background-377181301.jpg',
+   'https://thumb1.shutterstock.com/display_pic_with_logo/1247512/377181313/stock-photo-watercolor-succulents-clip-art-decorative-design-elements-set-floral-illustration-isolated-on-377181313.jpg',
+   'https://thumb1.shutterstock.com/display_pic_with_logo/1247512/377181307/stock-photo-watercolor-succulents-clip-art-decorative-design-elements-set-floral-illustration-isolated-on-377181307.jpg'
+];
+var num = 0;
+function next() {
+   var slider = document.getElementById('slider');
+   num++;
+   if(num >= images.length) {
+       num = 0;
+   }
+   slider.src = images[num];
+}
+function prev() {
+   var slider = document.getElementById('slider');
+   num--;
+   if(num < 0) {
+       num = images.length-1;
+   }
+   slider.src = images[num];
+}
+  </script>
+</body>
+</html>

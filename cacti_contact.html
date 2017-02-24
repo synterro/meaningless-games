@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cactivating</title>
+  <style>
+  body {
+    background-color: linen;
+    font-family: sans-serif;
+  }
+  h1 {
+    background-color: lightblue;
+    margin-left: 20px;
+  }
+  p {
+    margin-right: 100px;
+  }
+
+  ul {
+    list-style-type: square;
+
+  }
+  #button {
+    border-radius: 60px;
+    border: 2px solid #6495ED;
+    background-color: lightblue;
+    height: 50px;
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+
+  }
+  div p {
+    font-weight: bold;
+    color: blue;
+    font-size: 16pt;
+    margin-top: 14px;
+    margin-right: 0px;
+  }
+  a {
+    text-decoration: none;
+    color: #6495ED;
+  }
+
+  a:hover {
+    color: violet;
+  }
+  </style>
+</head>
+<body>
+
+
+  <h1 id= "demo" onmouseover="mouseOver()" onmouseout="mouseOut()" >Cactivating: Amazing Home-grown Succulent Plants</h1>
+  <div id="button">
+    <p>  <a href="file:///C:/Users/Martina/OneDrive/Documents/cacti.html">Home</a> </p>
+  </div>
+  <div id="button">
+      <p> <a href="file:///C:/Users/Martina/OneDrive/Documents/cacti_forsale.html">For Sale</a> </p>
+  </div>
+  <div id="button">
+    <p> <a href="file:///C:/Users/Martina/OneDrive/Documents/cacti_care.html">Succulent Care</a> </p>
+  </div>
+  <div id="button">
+    <p>  <a href="file:///C:/Users/Martina/OneDrive/Documents/cacti_contact.html">Contact Us</a> </p>
+  </div>
+
+  <br/>
+
+
+<h3> Contact Us </h3>
+
+<p> Have questions, comments, or feedback for us? Please feel free to contact us! </p>
+<form>
+   <label>Your name:</label>
+   <input id="user" name="username" type="text" />
+</form>
+<br/>
+<form>
+   <label>Your email:</label>
+   <input id="user" name="email" type="text" />
+</form>
+
+<button> Submit </button>
+<script>
+//weh
+function mouseOver() {
+    document.getElementById("demo").style.color = "green";
+
+}
+
+function mouseOut() {
+    document.getElementById("demo").style.color = "black";
+}
+</script>
+</body>
+</html>
